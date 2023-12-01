@@ -1,0 +1,240 @@
+ /* =======POP UP CSS======= */
+ :root{
+    --color-primary: #7380ec;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+  }
+   
+   .overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    }
+  
+    .popup{
+    margin: 30px auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 5px;
+    width: 35%;
+    height: 60%;
+    position: relative;
+    transition: all 1s ease-in-out;
+    }
+    .popup .close{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    }
+    .popup .content{
+    max-height: 100%;
+    /* overflow: auto; */
+    }
+  
+  
+  .popup1{
+    margin: 30px auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    height: 25%;
+    position: fixed;
+    top:20%;
+    left:35%;
+    transition: all 1s ease-in-out;
+   
+  }
+  .popup1 .close{
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup1 .close:hover{
+    color:var(--color-danger);
+  }
+  
+  overlay .content{
+    overflow: hidden;
+  }
+  
+  .popup{
+    height: 75%;
+  }
+  
+  
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=date], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+ 
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #fd0000;
+    color: white;
+    padding: 14px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #f73e3e;
+  }
+  
+  
+  /* input[type=button] {
+    width: 49%;
+    background-color: #fd0000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  } */
+  
+  /* .center{
+    text-align:center;
+    font-size:large;
+    color:solid black;
+    
+  } */
+  
+  form.addProduct{
+    margin-top: 2rem;
+  }
+  form.addProduct label{
+    margin-left: 1.05rem;
+  }
+  
+  /* Add Product popUp Box */
+  form.addProduct .row1, .row2, .row3, .row4{
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+  /* form.addProduct .row1{
+    
+  } */
+  
+  form.addProduct .row1 .col1,.col2{
+    flex-direction: row;
+  }
+  
+  form.addProduct .row1 .col1{
+    flex: 0.35;
+  }
+  
+  
+  form.addProduct .row1 .col2{
+    flex: 0.65;
+  }
+  
+  form.addProduct .row2{
+    flex: 1;
+  }
+  
+  form.addProduct .row3 .col1{
+    flex: 0.6;
+  }
+  
+  form.addProduct .row3 .col2{
+    flex: 0.4;
+  }
+  
+  
+  form.addProduct .row4{
+    margin-top: 2.5rem;
+  }
+  form.addProduct .row4 .col1{
+    flex: 0.5;
+  }
+  
+  form.addProduct .row4 .col2{
+    flex: 0.5;
+  }
+  
+  
+  /* deletepop up */
+  .del-popup .row1{
+    margin-top: 2rem;
+    display: flex;
+  }
+  
+  .del-popup .row1 .col1{
+    width: 100%;
+    flex: .5;
+  }
+  
+  .del-popup .row1 .col2{
+    width: 100%;
+    flex: .5;
+  }
